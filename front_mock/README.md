@@ -1,24 +1,6 @@
 # auth2_front
+To build: `docker build -t auth2_mock_front .`
 
-## Project setup
-```
-npm install
-```
+To run: `docker run -it -p 80:80 -p 443:443 --rm --name auth_mock auth2_mock_front`
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Certs need to be in the folder `assets`

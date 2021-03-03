@@ -19,7 +19,7 @@ public class Main {
         con.setHostnameVerifier((s, sslSession) -> true);
         con.setRequestProperty("Content-Type", "application/json");
         con.setDoOutput(true);
-        String jsonInputString = "{\"idToken\":\"...\"}";
+        String jsonInputString = String.format("{\"idToken\": \"%s\"}", args[0]);
         try (OutputStream os = con.getOutputStream()) {
             byte[] input = jsonInputString.getBytes(StandardCharsets.UTF_8);
             os.write(input);

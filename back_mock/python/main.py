@@ -1,5 +1,6 @@
 import urllib.request
 import json
+import sys
 from pprint import pprint
 # Necesario para conexiones no seguras
 import ssl
@@ -7,7 +8,7 @@ import ssl
 
 url = "https://back.catteam.tk/authorize"
 values = {
-    "idToken": "..."
+    "idToken": sys.argv[1]
 }
 
 headers = {

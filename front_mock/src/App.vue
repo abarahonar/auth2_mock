@@ -26,7 +26,7 @@ export default {
   name: "App",
   methods: {
     login: () => {
-      window.location.href = "https://auth.catteam.tk?origin=https://test.catteam.tk "
+      window.location.href = "https://auth.catteam.tk?origin=https://mock.catteam.tk "
     },
     verify: async () => {
       console.log("Get called");
